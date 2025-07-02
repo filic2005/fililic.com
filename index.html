@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filip Ilic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/eabb576d34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="tab-links-container">
+        <div class="tab-buttons">
+            <button class="tab-links active-link" onclick="opentab('home', this)">Home</button>
+            <button class="tab-links" onclick="opentab('education', this)">Education</button>
+            <button class="tab-links" onclick="opentab('projects', this)">Projects</button>
+            <button class="tab-links" onclick="opentab('experience', this)">Experience</button>
+            <button class="tab-links" onclick="opentab('skills', this)">Skills</button>
+            <button class="tab-links" onclick="opentab('contact', this)">Contact</button>
+        </div>
+    <button id="mode-toggle">🌙</button>
+    </div>
+
+    <section id="home" class="tab-contents active-tab">
+    <div class="intro">
+      <div class="intro-left">
+        <img src="images/Filip2.png" alt="Filip Ilic" />
+      </div>
+      <div class="intro-right">
+            <h1>Hi, I'm Filip Ilić!</h1>
+            <p> I'm a passionate computer science student who thrives on collaborative problem-solving and coding. As an enthusiastic, self-motivated, and hardworking individual, I enjoy tackling challenges and adapting to new environments.
+            I love working with a team to create impactful solutions and value the opportunity to learn from others. 
+            When I'm not coding, you'll find me watching sports, working out, playing video games, or spending time with friends and family.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="education" class="tab-contents">
+    <h1 class="section-title">Education</h1>
+    <div class="education-cards">
+        <div class="edu-box">
+            <h2>Northeastern University</h2>
+            <p class="edu-dates">Sep 2024 - May 2027</p>
+            <h3>Relevant Coursework</h3>
+            <p class="edu-desc">
+                Object-Oriented Design, Theory of Computation, Logic and Computation, Discrete Structures, Intensive Math Reasoning, Foundations of Cybersecurity, Introduction to Databases
+            </p>
+            <h3>Honors & Activities</h3>
+            <p class="edu-desc">Dean's List</p>
+        </div>
+        <div class="edu-box">
+            <h2>Worcester Polytechnic Institute</h2>
+            <p class="edu-dates">Aug 2023 - May 2024</p>
+            <h3>Relevant Coursework</h3>
+            <p class="edu-desc">
+                Algorithms, Systems Programming Concepts, Calculus 3 & 4
+            </p>
+            <h3>Honors & Activities</h3>
+            <p class="edu-desc">Dean's List, WPI Presidential Scholarship</p>
+        </div>
+    </div>
+    </section>
+
+  <section id="projects" class="tab-contents">
+    <h1 class="section-title">Projects</h1>
+    <div class="projects-row">
+        <a href="https://github.com/filic2005/flight-incident-db" class="project-card" target="_blank">
+            <h2>Flight Incident Database</h2>
+            <p class="project-dates">June 2025</p>
+            <ul>
+                <li>Designed and implemented a relational database (3NF) for flight incident reports using MySQL.</li>
+                <li>Built an ETL pipeline in R to clean, transform, and batch-insert CSV data into normalized tables.</li>
+                <li>Developed stored procedures, enforced referential integrity, and ran analytical SQL queries via R.</li>
+            </ul>
+        </a>
+        <a href="https://github.com/filic2005/fililic.com" class="project-card" target="_blank">
+            <h2>fililic.com</h2>
+            <p class="project-dates">January 2025</p>
+            <ul>
+                <li>Created a personal website using HTML, CSS, JavaScript, and AWS services (S3, Route53, CloudFront, Certificate Manager) for hosting and security.</li>
+            </ul>
+        </a>
+        <a href="https://github.com/filic2005/ThreeTrios" class="project-card" target="_blank">
+            <h2>Three Trios</h2>
+            <p class="project-dates">October 2024</p>
+            <ul>
+                <li>Developed a Java-based multiplayer game, Three Trios, incorporating over 50 Java classes, interfaces, and enumerations.</li>
+                <li>Followed object-oriented design principles such as Inheritance, Composition, Model/View/Controller, Decorators, Strategies, Observers, etc.</li>
+                <li>Designed gameplay mechanics allowing players to compete against either human opponents or algorithms with diverse play style strategies.</li>
+            </ul>
+        </a>
+    </div>
+    </section>
+
+
+  <section id="experience" class="tab-contents">
+    <h1 class="section-title">Experience</h1>
+    <div class="exp-row">
+        <a href="https://github.com/filic2005/boston-liquor-license-tracker" class="exp-card" target="_blank">
+            <h2 class="exp-comp">Code For Boston</h2>
+            <h3 class="exp-pos">Open-Source Software Engineer</h3>
+            <ul>
+                <li>Contributing to a frontend-focused platform that improves public access to liquor license statuses for Massachusetts businesses.</li>
+                <li>Using TypeScript to build a user-friendly interface that simplifies tracking of applications, renewals, and availability.</li>
+                <li>Collaborating on architecture and UI design based on state-provided licensing data.</li>
+            </ul>
+        </a>
+    </div>
+  </section>
+  
+  <section id="skills" class="tab-contents">
+    <h1 class="section-title">Skills</h1>
+    <div class="skills-row">
+        <div class="skill-card">
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>Serbian</li>
+                <li>German</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h2>Coding Languages</h2>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>C/C++</li>
+                <li>Racket</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h2>Technologies</h2>
+            <ul>
+                <li>JetBrains</li>
+                <li>VSCode</li>
+                <li>AWS</li>
+                <li>RStudio</li>
+                <li>Aiven</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h2>Operating Systems</h2>
+            <ul>
+                <li>Windows</li>
+                <li>MacOS</li>
+                <li>Linux</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+  <section id="contact" class="tab-contents">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ficoni05@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>617-943-9103</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/filipgozai/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/filipilic05/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/filic2005"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/websiteCV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Filip Ilic.</p>
+    </div>
+
+
+
+    <script>
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+
+    setTimeout(() => {
+      document.getElementById(tabname).classList.add("active-tab");
+    }, 50);
+
+    event.currentTarget.classList.add("active-link");
+  }
+</script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHThC93a29SICfDm4Uiz0dmtoPqALmJcFzXJufvM5y8jPAJOgKE7f7XJPUX3EtwH68/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+    <script>
+    const toggleBtn = document.getElementById('mode-toggle');
+
+    function updateToggleIcon() {
+        if (document.body.classList.contains('dark-mode')) {
+            toggleBtn.textContent = '☀️'; // Show sun when in dark mode
+        } else {
+            toggleBtn.textContent = '🌙'; // Show moon when in light mode
+        }
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+        // Save preference
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+
+        updateToggleIcon(); // Update icon when toggled
+    });
+
+    // On page load, apply saved theme and set correct icon
+    window.addEventListener('DOMContentLoaded', () => {
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+        updateToggleIcon(); // Set correct icon on load
+    });
+</script>
+</body>
+</html>
