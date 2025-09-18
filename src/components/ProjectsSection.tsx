@@ -22,9 +22,15 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 ))}
               </ul>
               <div className="project-card__links">
-                <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
-                  Live Demo
-                </a>
+                {project.links?.demo && (
+                  <a
+                    href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                )}
                 <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>

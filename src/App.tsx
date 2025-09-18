@@ -31,7 +31,7 @@ const heroContent: HeroContent = {
   eyebrow: 'Computer science student',
   headline: 'Hi, I’m Filip Ilić!',
   lede:
-    'I’m a passionate computer science student who thrives on collaborative problem-solving and coding. I love working with a team to create impactful solutions and value every opportunity to learn from others. When I’m not coding, you’ll find me watching sports, working out, playing video games, or spending time with friends and family.',
+    'I’m a passionate computer science student who thrives on collaborative problem-solving and coding. I love working with a team to create impactful solutions and value every opportunity to learn from others.',
   imageSrc: '/images/IMG_0194.JPG',
   imageAlt: 'Filip Ilić headshot',
 }
@@ -59,7 +59,6 @@ const projects: Project[] = [
       'Developed stored procedures, enforced referential integrity, and ran analytical SQL queries via R.',
     ],
     links: {
-      demo: 'https://github.com/filic2005/flight-incident-db',
       github: 'https://github.com/filic2005/flight-incident-db',
     },
   },
@@ -71,7 +70,6 @@ const projects: Project[] = [
       'Configured AWS S3, Route 53, CloudFront, and Certificate Manager for secure global hosting.',
     ],
     links: {
-      demo: 'https://github.com/filic2005/fililic.com',
       github: 'https://github.com/filic2005/fililic.com',
     },
   },
@@ -84,7 +82,6 @@ const projects: Project[] = [
       'Built gameplay mechanics supporting human opponents and AI with diverse play styles.',
     ],
     links: {
-      demo: 'https://github.com/filic2005/ThreeTrios',
       github: 'https://github.com/filic2005/ThreeTrios',
     },
   },
@@ -137,7 +134,9 @@ const skillGroups: SkillGroup[] = [
   },
   {
     label: 'Technologies',
-    items: [{ name: 'JetBrains' }, { name: 'VS Code' }, { name: 'AWS' }, { name: 'RStudio' }, { name: 'Aiven' }],
+    items: [{ name: 'JetBrains' }, { name: 'VS Code' }, { name: 'AWS' }, { name: 'RStudio' }, 
+      { name: 'Aiven' }, { name: 'Vercel' }, { name: 'Supabase' }, { name: 'OpenAI API' }, 
+      { name: 'Anthropic API' }, { name: 'React' }, { name: 'Flask' }, { name: 'FastAPI' }],
   },
   {
     label: 'Operating Systems',
@@ -146,6 +145,17 @@ const skillGroups: SkillGroup[] = [
 ]
 
 const experiences: Experience[] = [
+  {
+    role: 'Software Engineer Co-op',
+    org: 'NExT Consulting',
+    timeframe: 'Ongoing',
+    achievements: [
+      'Built a web app that helps beginner students kickstart their first software projects using AI-driven suggestions and guidance.',
+      'Designed and refined LLM prompts to generate tailored project ideas, tech stacks, and step-by-step implementation tickets based on user input.',
+      'Worked with backend schema design and API structure while implementing frontend features such as the chatbot UI and signup flow.',
+    ],
+    link: 'https://github.com/filic2005/boston-liquor-license-tracker',
+  },
   {
     role: 'Open-Source Software Engineer',
     org: 'Code for Boston',

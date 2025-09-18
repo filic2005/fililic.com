@@ -13,9 +13,6 @@ export function SiteFooter({ navLinks, resumeUrl }: SiteFooterProps) {
           <a className="brand-mark" href="#hero">
             FI
           </a>
-          <p>
-            Designed &amp; built with care in Toronto. Always iterating on the craft of resilient, human-centered software.
-          </p>
         </div>
         <div className="footer-links">
           {navLinks.map((link) => (
@@ -29,7 +26,6 @@ export function SiteFooter({ navLinks, resumeUrl }: SiteFooterProps) {
         </div>
         <div className="footer-meta">
           <span>© {new Date().getFullYear()} Filip Ilić</span>
-          <span>Let’s build inclusive tech.</span>
         </div>
       </div>
     </footer>

@@ -311,6 +311,7 @@ main {
 }
 
 .timeline-item {
+  width: 700px;
   position: relative;
   display: flex;
   gap: 1.25rem;
