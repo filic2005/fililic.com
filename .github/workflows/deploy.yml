@@ -30,12 +30,12 @@ jobs:
 
       # 5. Deploy /dist to S3
       - name: Sync S3 bucket
-        uses: aws-actions/s3-sync@v2
+        uses: jakejarvis/s3-sync-action@master
         with:
-          bucket: fililic.com
-          region: us-east-1   # change if your bucket is in a different region
-          source-dir: dist
-          delete: true        # remove old files that aren’t in the new build
+            args: --delete
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            AWS_S3_BUCKET: fililic.com
+            AWS_REGION: us-east-1
+            SOURCE_DIR: dist
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
