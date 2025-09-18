@@ -67,7 +67,7 @@ const projects: Project[] = [
     context: 'January 2025',
     description: [
       'Created a personal website using HTML, CSS, and JavaScript.',
-      'Configured AWS S3, Route 53, CloudFront, and Certificate Manager for secure global hosting.',
+      'Configured AWS S3, Route 53, CloudFront, IAM, and Certificate Manager for secure global hosting.',
     ],
     links: {
       github: 'https://github.com/filic2005/fililic.com',
